@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aymane Berhoua — Developer in Progress</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-trail" id="cursor-trail"></div>
+
+    <!-- ─── NAV ─────────────────────────────────────── -->
+    <header class="nav" id="nav">
+      <a href="#" class="nav-logo">
+        <span class="logo-bracket">[</span>AB<span class="logo-bracket">]</span>
+      </a>
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link"
+          ><span class="nav-num">01</span>about</a
+        >
+        <a href="#skills" class="nav-link"
+          ><span class="nav-num">02</span>skills</a
+        >
+        <a href="#experience" class="nav-link"
+          ><span class="nav-num">03</span>experience</a
+        >
+        <a href="#achievements" class="nav-link"
+          ><span class="nav-num">04</span>achievements</a
+        >
+        <a href="#gallery" class="nav-link"
+          ><span class="nav-num">05</span>gallery</a
+        >
+        <a href="#connect" class="nav-link nav-cta">connect →</a>
+      </nav>
+      <div class="nav-backdrop" id="nav-backdrop"></div>
+    </header>
+
+    <!-- ─── HERO ─────────────────────────────────────── -->
+    <section class="hero" id="hero">
+      <div class="hero-grid-overlay" aria-hidden="true"></div>
+      <div class="hero-left">
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          <span>Available for opportunities · Casablanca, MA</span>
+        </div>
+        <h1 class="hero-name">
+          <span class="hero-name-line" data-reveal>Aymane</span>
+          <span class="hero-name-line hero-name-blue" data-reveal>Berhoua</span>
+        </h1>
+        <p class="hero-tagline" data-reveal>
+          High school developer building things that actually work. Python ·
+          CS50 · Godot · STEM.
+        </p>
+        <div class="hero-code" data-reveal>
+          <span class="code-comment">// my philosophy</span><br />
+          <span class="code-kw">while</span>(<span class="code-var">age</span>++
+          &lt; <span class="code-str">life.length</span>) {<br />
+          &nbsp;&nbsp;++<span class="code-var">knowledge</span>;<br />
+          }
+        </div>
+        <div class="hero-actions" data-reveal>
+          <a href="#achievements" class="btn btn-primary">View achievements</a>
+          <a href="#connect" class="btn btn-outline">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-photo-frame">
+          <img
+            src="profilepic.png"
+            alt="Aymane Berhoua"
+            class="hero-photo"
+            loading="eager"
+          />
+          <div class="hero-photo-border"></div>
+          <div class="hero-photo-badge">
+            <span>1st</span><small>Hackathon</small>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="hero-scroll-hint" aria-label="Scroll down">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </a>
+    </section>
+
+    <!-- ─── ABOUT ─────────────────────────────────────── -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-num">01</span>
+          <h2 class="section-title">About me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-bio" data-reveal>
+            <p>
+              I'm a high school student from
+              <strong>Casablanca, Morocco</strong> — passionate about coding,
+              problem-solving, and building things that actually work.
+            </p>
+            <p>
+              I'm deepening my skills in Python through Harvard's
+              <strong>CS50P</strong> and exploring computer science foundations
+              through <strong>CS50x</strong>. I enjoy tackling complex ideas,
+              breaking them down, and turning them into practical solutions.
+            </p>
+            <p>
+              Whether it's writing cleaner code, learning new technologies, or
+              sharpening my study systems — I'm always focused on growth and
+              long-term progress. My goal: become a
+              <strong>software engineer</strong>.
+            </p>
+            <p class="about-closing">Happy coding!</p>
+            <div class="about-langs">
+              <div class="lang-pill">
+                <span class="lang-flag">🇲🇦</span>Arabic<span class="lang-level"
+                  >Native</span
+                >
+              </div>
+              <div class="lang-pill">
+                <!-- US flag for English -->
+                <span class="lang-flag">🇺🇸</span>English<span class="lang-level"
+                  >Professional</span
+                >
+              </div>
+              <div class="lang-pill">
+                <span class="lang-flag">🇫🇷</span>French<span class="lang-level"
+                  >Professional</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="about-stats" data-reveal>
+            <div class="stat-card">
+              <div class="stat-icon">🏆</div>
+              <div class="stat-value">2×</div>
+              <div class="stat-label">Hackathon 1st place wins</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🎓</div>
+              <div class="stat-value">3+</div>
+              <div class="stat-label">Certifications earned</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🎮</div>
+              <div class="stat-value">2+</div>
+              <div class="stat-label">Games shipped with Godot Engine</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">📚</div>
+              <div class="stat-value">CS50</div>
+              <div class="stat-label">
+                Currently studying Harvard's CS50P & CS50x
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SKILLS ─────────────────────────────────────── -->
+    <section class="section section-dark" id="skills">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-num">02</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-grid" data-reveal>
+          <div class="skill-item">
+            <div class="skill-top">
+              <div class="skill-label">
+                <span class="skill-icon">🐍</span
+                ><span class="skill-name">Python</span>
+              </div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+            <p class="skill-note">
+              Competition-level · CS50P · CLI tools · Hackathon winner
+            </p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top">
+              <div class="skill-label">
+                <span class="skill-icon">&lt;/&gt;</span
+                ><span class="skill-name">HTML & CSS</span>
+              </div>
+              <span class="skill-pct">65%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="65"></div>
+            </div>
+            <p class="skill-note">
+              Lumos Learning certified · Semantic markup · Responsive layouts
+            </p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top">
+              <div class="skill-label">
+                <span class="skill-icon">🎮</span
+                ><span class="skill-name">Godot Engine</span>
+              </div>
+              <span class="skill-pct">55%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="55"></div>
+            </div>
+            <p class="skill-note">
+              Game dev · Won Campfire Game Dev Hackathon · Itch.io published
+            </p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top">
+              <div class="skill-label">
+                <span class="skill-icon">©</span
+                ><span class="skill-name">C</span>
+              </div>
+              <span class="skill-pct">35%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="35"></div>
+            </div>
+            <p class="skill-note">
+              Learning through Harvard CS50x · Systems fundamentals
+            </p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top">
+              <div class="skill-label">
+                <span class="skill-icon">∑</span
+                ><span class="skill-name">Mathematics</span>
+              </div>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+            <p class="skill-note">
+              1er BAC Sciences Maths BIOF · Algebra · Physics
+            </p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top">
+              <div class="skill-label">
+                <span class="skill-icon">🗣</span
+                ><span class="skill-name">English</span>
+              </div>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+            <p class="skill-note">
+              Full professional proficiency · Top of class · Certified
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── EXPERIENCE ─────────────────────────────────── -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-num">03</span>
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="timeline">
+          <!-- 1. President -->
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Feb 2026 — Present</div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">President — Club des Sciences</h3>
+              <p class="timeline-org">
+                Lycée Qualifiant Abou Hayane Tawhidi · Part-time
+              </p>
+              <p class="timeline-desc">
+                Elected President of the school's Science Club. Leading a
+                student team to develop scientific and technology projects.
+                Building habits of teamwork, structured problem-solving, and
+                public presentation.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Student Leadership</span>
+                <span class="tag">Team Management</span>
+                <span class="tag">STEM Projects</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Campfire -->
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Feb 2026</div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">
+                Campfire Game Dev Hackathon — 1st Place
+              </h3>
+              <p class="timeline-org">Hack Club × École Centrale Casablanca</p>
+              <p class="timeline-desc">
+                Built "Flappy Fish" with a team over one weekend and won first
+                place. My first game dev hackathon — developed under pressure,
+                shipped a fully playable game, and took home the top prize.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Godot Engine</span>
+                <span class="tag">Game Dev</span>
+                <span class="tag">Hack Club</span>
+                <span class="tag">Teamwork</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. BAC -->
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Sep 2025 — Jun 2026</div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">1er BAC Sciences Mathématiques BIOF</h3>
+              <p class="timeline-org">Lycée Qualifiant Abou Hayane Tawhidi</p>
+              <p class="timeline-desc">
+                Pursuing a mathematics-focused baccalauréat with majors in
+                Mathematics and Physics. Simultaneously studying Harvard's CS50P
+                and CS50x outside of school hours.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Mathematics</span>
+                <span class="tag">Physics</span>
+                <span class="tag">CS50P</span>
+                <span class="tag">CS50x</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Python Hackathon -->
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2025</div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">
+                Regional Python Hackathon — 1st Place
+              </h3>
+              <p class="timeline-org">
+                Ministry of National Education × Samsung · Casablanca
+              </p>
+              <p class="timeline-desc">
+                Placed 1st regionally in the national Python programming
+                language hackathon. Built a CLI calculator and solved
+                algorithmic challenges to advance to the national competition,
+                representing the Casablanca region.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Algorithms</span>
+                <span class="tag">Competition</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ACHIEVEMENTS ──────────────────────────────── -->
+    <section class="section section-dark" id="achievements">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-num">04</span>
+          <h2 class="section-title">Achievements & Certifications</h2>
+        </div>
+        <div class="ach-grid">
+          <div class="ach-card ach-featured" data-reveal>
+            <div class="ach-num">01</div>
+            <h3 class="ach-title">Regional Python Hackathon Champion</h3>
+            <p class="ach-org">Ministry of Education × Samsung · 2025</p>
+            <p class="ach-desc">
+              Won 1st place regionally and represented Casablanca at the
+              national Python programming competition.
+            </p>
+            <div class="ach-cert-preview">
+              <img
+                src="hacksam.jpg"
+                alt="Samsung Python Hackathon"
+                class="ach-photo"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="ach-card ach-featured" data-reveal>
+            <div class="ach-num">02</div>
+            <h3 class="ach-title">Campfire Game Dev Hackathon — 1st Place</h3>
+            <p class="ach-org">Hack Club × École Centrale Casablanca · 2026</p>
+            <p class="ach-desc">
+              Built "Flappy Fish" with a team over one weekend and won first
+              place at my very first game dev hackathon.
+            </p>
+            <div class="ach-cert-preview">
+              <img
+                src="CAMPFIRE_PRIZE.jpeg"
+                alt="Campfire Hackathon Winners"
+                class="ach-photo"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="ach-card cert-card" data-reveal>
+            <div class="ach-num">03</div>
+            <h3 class="ach-title">Python Certificate</h3>
+            <p class="ach-org">Simplilearn · Jan 2024</p>
+            <p class="ach-desc">
+              Certified in Python development and algorithmic problem-solving.
+            </p>
+            <div class="cert-img-wrap">
+              <img
+                src="hacksamcertificate.png"
+                alt="Python Hackathon Certificate"
+                class="cert-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="ach-card cert-card" data-reveal>
+            <div class="ach-num">04</div>
+            <h3 class="ach-title">HTML Certificate</h3>
+            <p class="ach-org">Lumos Learning · 2024</p>
+            <p class="ach-desc">
+              Certified in HTML — structure, semantics, and web fundamentals.
+            </p>
+            <div class="cert-img-wrap">
+              <img
+                src="html_certificate.jpg"
+                alt="HTML Certificate"
+                class="cert-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="ach-card cert-card" data-reveal>
+            <div class="ach-num">05</div>
+            <h3 class="ach-title">Excellence in English</h3>
+            <p class="ach-org">Lycée Abou Hayane Tawhidi · Jan 2025</p>
+            <p class="ach-desc">
+              Ranked 1st in class in English — tronc commun year.
+            </p>
+            <div class="cert-img-wrap">
+              <img
+                src="en_cert.png"
+                alt="English Excellence Certificate"
+                class="cert-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="ach-card" data-reveal>
+            <div class="ach-num">06</div>
+            <h3 class="ach-title">Python National Competition</h3>
+            <p class="ach-org">Ministry of Education × Samsung · 2025</p>
+            <p class="ach-desc">
+              Proud to have represented the Casablanca region at the national
+              Python programming competition after winning the regional stage.
+              An incredible experience competing at national level.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── GALLERY ───────────────────────────────────── -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-num">05</span>
+          <h2 class="section-title">Gallery</h2>
+        </div>
+
+        <!-- Campfire subsection — 3-col masonry feel -->
+        <div class="gallery-sub-label" data-reveal>
+          <span class="gallery-sub-tag"
+            >Campfire · Hack Club × École Centrale</span
+          >
+        </div>
+        <div class="gallery-grid" data-reveal>
+          <div class="gallery-item gallery-wide">
+            <img
+              src="CAMPFIRE_PRIZE.jpeg"
+              alt="Campfire Hackathon — Winners podium"
+              loading="lazy"
+            />
+            <div class="gallery-caption">
+              🏆 1st place — Flappy Fish · Team Aymane
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="campfire.jpeg"
+              alt="Campfire Hackathon — All participants"
+              loading="lazy"
+            />
+            <div class="gallery-caption">All participants · Campfire 2026</div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="hackathon_casa.jpg"
+              alt="Campfire Hackathon — During the event"
+              loading="lazy"
+            />
+            <div class="gallery-caption">
+              Building under pressure · École Centrale
+            </div>
+          </div>
+        </div>
+
+        <!-- Samsung / Python hackathon — 2 images full width -->
+        <div class="gallery-sub-label" data-reveal>
+          <span class="gallery-sub-tag">Samsung × Ministry of Education</span>
+        </div>
+        <div class="gallery-grid gallery-samsung" data-reveal>
+          <div class="gallery-item gallery-wide">
+            <img
+              src="hacksam.jpg"
+              alt="Samsung Python Hackathon — Casablanca"
+              loading="lazy"
+            />
+            <div class="gallery-caption">
+              Regional winners · Samsung × Ministry 2025
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="hacksamcertificate.png"
+              alt="Regional Python Hackathon Certificate"
+              loading="lazy"
+            />
+            <div class="gallery-caption">1st place certificate · Jan 2025</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONNECT ───────────────────────────────────── -->
+    <section class="section connect-section" id="connect">
+      <div class="container">
+        <div class="connect-layout" data-reveal>
+          <!-- Left: headline + email + socials -->
+          <div class="connect-inner">
+            <span class="section-num">06</span>
+            <h2 class="connect-headline">
+              Let's build<br />
+              <span class="connect-blue">something</span><br />
+              together.
+            </h2>
+            <p class="connect-sub">
+              I'm always open to connecting with fellow builders, mentors, and
+              curious minds. Drop me a message.
+            </p>
+            <a
+              href="mailto:aymane.berhoua@gmail.com"
+              class="btn btn-primary btn-lg"
+              >aymane.berhoua@gmail.com</a
+            >
+            <div class="connect-socials">
+              <a
+                href="https://www.linkedin.com/in/aymaneberhoua/"
+                target="_blank"
+                rel="noopener"
+                class="social-link"
+                >LinkedIn</a
+              >
+              <span class="social-sep">·</span>
+              <a
+                href="https://github.com/cottidev"
+                target="_blank"
+                rel="noopener"
+                class="social-link"
+                >GitHub</a
+              >
+              <span class="social-sep">·</span>
+              <a
+                href="https://cottidev.itch.io"
+                target="_blank"
+                rel="noopener"
+                class="social-link"
+                >Itch.io</a
+              >
+              <span class="social-sep">·</span>
+              <a
+                href="https://discordapp.com/users/1100540512659832842"
+                target="_blank"
+                rel="noopener"
+                class="social-link"
+                >Discord</a
+              >
+            </div>
+          </div>
+
+          <!-- Right: terminal + quick stats -->
+          <div class="connect-panel">
+            <div class="connect-panel-terminal">
+              <div class="t-bar">
+                <div class="t-dot t-dot-r"></div>
+                <div class="t-dot t-dot-y"></div>
+                <div class="t-dot t-dot-g"></div>
+              </div>
+              <div class="t-line">
+                <span class="t-prompt">~ $</span>
+                <span class="t-cmd">whoami</span>
+              </div>
+              <div class="t-line">
+                <span class="t-out">aymane_berhoua</span>
+              </div>
+              <div class="t-line">&nbsp;</div>
+              <div class="t-line">
+                <span class="t-prompt">~ $</span>
+                <span class="t-cmd">cat profile.json</span>
+              </div>
+              <div class="t-line"><span class="t-dim">{</span></div>
+              <div class="t-line">
+                &nbsp; <span class="t-dim">"role":</span>
+                <span class="t-str">"developer_in_progress"</span
+                ><span class="t-dim">,</span>
+              </div>
+              <div class="t-line">
+                &nbsp; <span class="t-dim">"location":</span>
+                <span class="t-str">"casablanca_ma"</span
+                ><span class="t-dim">,</span>
+              </div>
+              <div class="t-line">
+                &nbsp; <span class="t-dim">"goal":</span>
+                <span class="t-str">"software_engineer"</span
+                ><span class="t-dim">,</span>
+              </div>
+              <div class="t-line">
+                &nbsp; <span class="t-dim">"status":</span>
+                <span class="t-out">"open_to_opportunities"</span>
+              </div>
+              <div class="t-line"><span class="t-dim">}</span></div>
+              <div class="t-line">&nbsp;</div>
+              <div class="t-line">
+                <span class="t-prompt">~ $</span> <span class="t-cmd">_</span>
+              </div>
+            </div>
+            <div class="connect-stat-row">
+              <div class="connect-stat">
+                <div class="connect-stat-val">2×</div>
+                <div class="connect-stat-lbl">HACKATHON WINS</div>
+              </div>
+              <div class="connect-stat">
+                <div class="connect-stat-val">3+</div>
+                <div class="connect-stat-lbl">CERTIFICATIONS</div>
+              </div>
+              <div class="connect-stat">
+                <div class="connect-stat-val">CS50</div>
+                <div class="connect-stat-lbl">HARVARD COURSES</div>
+              </div>
+              <div class="connect-stat">
+                <div class="connect-stat-val">∞</div>
+                <div class="connect-stat-lbl">CURIOSITY</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ────────────────────────────────────── -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span class="footer-logo"
+          ><span class="logo-bracket">[</span>AB<span class="logo-bracket"
+            >]</span
+          ></span
+        >
+        <span class="footer-copy"
+          >© 2026 Aymane Berhoua · Casablanca, Morocco</span
+        >
+        <span class="footer-code"
+          >while(age++ &lt; life.length) ++knowledge</span
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
