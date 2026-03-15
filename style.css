@@ -85,6 +85,26 @@ body::after {
   opacity: 0.5;
 }
 
+/* ─── FLOATING SQUARES CANVAS ──────────────────── */
+#squares-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure all content layers sit above the canvas */
+.nav,
+.hero,
+.section,
+.connect-section,
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
 /* ─── SCROLLBAR ────────────────────────────────── */
 ::-webkit-scrollbar {
   width: 4px;
@@ -830,7 +850,6 @@ h4 {
   transform: translateY(-3px);
   box-shadow: var(--shadow-blue);
 }
-/* AI skill card gets a subtle glow accent */
 .skill-item-ai {
   border-color: rgba(40, 116, 204, 0.25);
   background: linear-gradient(
@@ -1093,7 +1112,6 @@ h4 {
   white-space: nowrap;
 }
 
-/* ── Uniform gallery grid: every item identical ── */
 .gallery-grid,
 .gallery-samsung {
   display: grid;
@@ -1101,7 +1119,6 @@ h4 {
   gap: 1rem;
 }
 
-/* Remove any spanning — all cells are equal */
 .gallery-wide,
 .gallery-tall {
   grid-column: unset;
@@ -1114,10 +1131,9 @@ h4 {
   border-radius: var(--radius-md);
   border: 1px solid var(--border);
   background: var(--bg-card);
-  aspect-ratio: 4/3; /* identical ratio for every card */
+  aspect-ratio: 4/3;
 }
 
-/* tall override no longer needed — neutralise it */
 .gallery-item.gallery-tall {
   aspect-ratio: 4/3;
 }
@@ -1378,7 +1394,6 @@ h4 {
   .gallery-samsung {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* ensure no spanning on tablet either */
   .gallery-wide,
   .gallery-tall {
     grid-column: unset;
@@ -1574,6 +1589,11 @@ h4 {
   .footer-code {
     display: none;
   }
+
+  /* Reduce square count on mobile for performance */
+  #squares-canvas {
+    opacity: 0.7;
+  }
 }
 
 /* ═══════════════════════════════════════════════
@@ -1588,5 +1608,12 @@ h4 {
   }
   .interests-row {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  #squares-canvas {
+    display: none;
   }
 }
