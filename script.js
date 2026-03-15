@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document
       .querySelectorAll(
-        "a, button, .skill-item, .ach-card, .stat-card, .gallery-item",
+        "a, button, .skill-item, .ach-card, .stat-card, .gallery-item, .interest-chip",
       )
       .forEach((el) => {
         el.addEventListener("mouseenter", () => {
@@ -87,30 +87,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (navToggle && navMenu) {
-    // Toggle on button click
     navToggle.addEventListener("click", (e) => {
       e.stopPropagation();
       navMenu.classList.contains("open") ? closeNav() : openNav();
     });
 
-    // Close when a nav link is clicked
     navMenu.querySelectorAll(".nav-link").forEach((link) => {
       link.addEventListener("click", closeNav);
     });
 
-    // Close when backdrop is clicked
     if (navBackdrop) {
       navBackdrop.addEventListener("click", closeNav);
     }
 
-    // Close on Escape key
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && navMenu.classList.contains("open")) {
         closeNav();
       }
     });
 
-    // Prevent clicks inside the drawer from closing it
     navMenu.addEventListener("click", (e) => e.stopPropagation());
   }
 
@@ -144,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
         revealObserver.unobserve(entry.target);
       });
     },
-    { threshold: 0.1, rootMargin: "0px 0px -60px 0px" },
+    { threshold: 0.05, rootMargin: "0px" },
   );
   document
     .querySelectorAll("[data-reveal]")
@@ -248,6 +243,10 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(
     "%cwhile(age++ < life.length) ++knowledge",
     "color:#6b84a8;font-family:monospace;font-size:12px;",
+  );
+  console.log(
+    '%c"You have power over your mind — not outside events." — Marcus Aurelius',
+    "color:#a8e6a3;font-family:monospace;font-size:11px;font-style:italic;",
   );
   console.log(
     "%c→ aymane.berhoua@gmail.com",
