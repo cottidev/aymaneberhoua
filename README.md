@@ -1,4 +1,4 @@
-# aymane-berhoua.dev
+# PERSONAL WEBSITE
 
 Personal website of **Aymane Berhoua** — developer from Casablanca, two-time hackathon winner, CS50 student.
 
